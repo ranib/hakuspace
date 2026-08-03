@@ -6,8 +6,8 @@
 
 * {
     font-weight: bold;
+    font-size: 16;
     border-radius: 20px;
-    transition: all 1s cubic-bezier(0, 0.5, 0.35, 1);
 }
 
 window#waybar {
@@ -17,25 +17,25 @@ window#waybar {
 }
 
 .modules-center {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 0 0 30px 30px;
-    padding: 4px 20px 4px 20px;
+    padding: 2px 20px 6px 20px;
     margin: 0 0 5px 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .modules-left {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 0 0 30px 0;
-    padding: 4px 20px 4px 20px;
+    padding: 2px 20px 6px 20px;
     margin: 0 0 5px 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .modules-right {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 0 0 0 30px;
-    padding: 4px 20px 4px 20px;
+    padding: 2px 20px 6px 20px;
     margin: 0 0 5px 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
@@ -45,8 +45,8 @@ window#waybar {
 /* COMMON MODULE STYLES                               */
 /* ============================================================================== */
 #custom-monitor,
-#custom-settings,
-#custom-logo,
+#custom-bar,
+#custom-menu,
 #window,
 #mpris,
 #cava,
@@ -62,51 +62,47 @@ window#waybar {
 #power-profiles-daemon {
     margin: 1px;
     padding: 0 10px;
+    transition: all 1s cubic-bezier(0, 0.5, 0.35, 1);
     min-width: 20px;
 }
 
 /* ============================================================================== */
 /* WORKSPACES                                    */
 /* ============================================================================== */
-#hworkspaces {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-}
-
 #workspaces {
-    padding: 2px 6px;
+    border-radius: 999px;
+    padding: 2px 8px;
+    margin: 0 4px;
 }
 
 #workspaces button {
-    background-color: @accent_color;
-    border-radius: 999px; 
-    padding: 0 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 0 10px;
     margin: 0 3px;
-    min-width: 10px;
+    min-width: 0;
     min-height: 0;
-    opacity: 0.6;
+    transition: all 0.8s cubic-bezier(0, 0.5, 0.35, 1);
 }
 
 #workspaces button.active {
-    background-color: @accent_color; 
-    min-width: 40px;
-    opacity: 1;
+    background-color: @accent_color;
+    min-width: 30px;
+    transition: all 0.8s cubic-bezier(0, 0.5, 0.35, 1);
 }
 
 #workspaces button.empty {
-    background-color: @accent_color;
-    opacity: 0.2; 
+    background-color: rgba(255, 255, 255, 0.04);
 }
 
 #workspaces button.empty.active {
-    background-color: @accent_color;
-    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #workspaces button.overview {
-    background-color: rgba(255, 255, 255, 0.1);
-    min-width: 40px;
+    background-color: @accent_color;
+    min-width: 30px;
+    transition: all 0.8s cubic-bezier(0, 0.5, 0.35, 1);
 }
 
 /* ============================================================================== */
@@ -119,7 +115,7 @@ window#waybar {
 }
 
 #custom-monitor,
-#custom-settings {
+#custom-bar {
     border-top: 2px solid @accent_color;
     border-radius: 0 0 20px 20px;
     margin: 0 4px 0 4px;
@@ -131,6 +127,7 @@ window#waybar {
     background-color: rgba(32, 32, 32, 0.6);
     margin: 1px;
     padding: 0 12px;
+    transition: all 1s cubic-bezier(0, 0.5, 0.35, 1);
     min-width: 20px;
 }
 
@@ -181,8 +178,8 @@ window#waybar {
 /* ============================================================================== */
 #custom-recorder:hover,
 #custom-monitor:hover,
-#custom-settings:hover,
-#custom-logo:hover,
+#custom-bar:hover,
+#custom-menu:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
@@ -195,22 +192,30 @@ window#waybar {
 #custom-notification:hover {
     color: #000000;
     background-color: @accent_color;
+    transition: all 0.4s cubic-bezier(0, 0.5, 0.35, 1);
     min-width: 100px;
 }
 
 #custom-monitor:hover,
-#custom-settings:hover {
+#custom-bar:hover {
     border-radius: 20px;
 }
 
 #workspaces button:hover {
-    min-width: 35px;
+    background-color: @accent_color;
+    transition: all 0.4s cubic-bezier(0, 0.5, 0.35, 1);
+    min-width: 20px;
 }
 
+#workspaces button.active:hover {
+    transition: all 0.4s cubic-bezier(0, 0.5, 0.35, 1);
+    min-width: 60px;
+}
 
 #clock:hover {
     color: #000000;
     background-color: @accent_color;
+    transition: all 0.4s cubic-bezier(0, 0.5, 0.35, 1);
     min-width: 100px;
 }
 
