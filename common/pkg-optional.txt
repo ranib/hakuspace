@@ -1,3 +1,8 @@
+nwg-look                      # GTK theme and appearance configurator
+ncdu                          # Disk usage analyzer (interactive TUI)
+btop                          # Resource monitor (CPU/RAM/disk/network)
+pavucontrol                   # PulseAudio/PipeWire volume control GUI
+gparted                       # Disk partition editor GUI
 wl-screenrec-git              # Wayland screen recorder (AUR)
 rsync                         # Fast incremental file sync/copy
 wget                          # Command-line downloader
@@ -9,4 +14,7 @@ pipes.sh                      # Animated pipes in terminal
 tty-clock                     # Terminal clock
 cloudflare-warp-bin           # Cloudflare WARP (warp-cli) prebuilt binary package (AUR)
 zen-browser-bin               # Zen Browser prebuilt binary package (AUR)
-visual-studio-code-bin        # VS Code prebuilt binary package (AUR)
+#visual-studio-code-bin        # VS Code prebuilt binary package (AUR)
+aerion-bin                    # An Open Source Lightweight E-Mail Client
+adw-gtk-theme                 # LibAdwaita Theme for all GTK3 and GTK4 Apps
+l3afpad                       # Light weight text editor
