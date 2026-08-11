@@ -35,9 +35,9 @@
     ],
 
     "clock": {
-        "format": " {:%H:%M} ",
+        "format": " {:%I:%M %p} ",
         "format-alt": " {:%A, %d %B %Y} ",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
         "calendar": {
                     "mode"          : "month",
                     "mode-mon-col"  : 3,
