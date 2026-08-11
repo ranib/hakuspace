@@ -105,14 +105,7 @@ Specific packages for each WM: [pkg-hyprland](https://github.com/hakuimaku/hakus
 If you prefer to experience the **lastest changes** (Lastest Git), you can clone the main branch:
 ```bash
 cd ~
-git clone https://github.com/hakuimaku/hakuspace.git ~/hakuspace
-
-```
-
-If you prefer the version I've tested (a little honestly), clone the **stable** release version `v2.2.1` (lastest):
-```bash
-cd ~
-git clone --depth 1 --branch v2.2.1 https://github.com/hakuimaku/hakuspace.git ~/hakuspace
+git clone https://github.com/ranib/hakuspace.git ~/hakuspace
 
 ```
 
