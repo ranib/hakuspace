@@ -63,7 +63,7 @@ zip                           # ZIP creation utility
 
 # === Fonts ===
 rofi-emoji                    # Emoji font, Rofi menu selector
-noto-fonts                    # General Unicode font family
-noto-fonts-cjk                # CJK font coverage
-noto-fonts-emoji              # Emoji font set
+#noto-fonts                    # General Unicode font family
+#noto-fonts-cjk                # CJK font coverage
+#noto-fonts-emoji              # Emoji font set
 ttf-jetbrains-mono-nerd       # Nerd Font for terminal/status bar glyphs (Use Nerd Font icons)
