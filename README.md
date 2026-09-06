@@ -109,7 +109,7 @@ git clone --depth 1 --branch v2.3.0 https://github.com/hakuimaku/hakuspace.git ~
 - If you prefer to experience the **lastest changes**:
 ```bash
 cd ~
-git clone https://github.com/hakuimaku/hakuspace.git ~/hakuspace
+git clone https://github.com/ranib/hakuspace.git ~/hakuspace
 
 ```
 
